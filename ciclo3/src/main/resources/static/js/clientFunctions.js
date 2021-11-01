@@ -20,7 +20,7 @@ function editarClient(){
        
         data: dataToSend,
         
-        url: 'http://129.151.116.109:1010/api/Client/update',
+        url: 'http://129.151.116.109:7070/api/Client/update',
         
         type: 'PUT',
         contentType:'application/json',
@@ -55,7 +55,7 @@ function eliminarClient(idElemento){
         data : dataToSend,
         
        
-        url : "http://129.151.116.109:1010/api/Client/"+idElemento,
+        url : "http://129.151.116.109:7070/api/Client/"+idElemento,
         type: 'DELETE',
         contentType:'application/json',
         success : function(json, textStatus, xhr) {
@@ -73,10 +73,9 @@ function eliminarClient(idElemento){
 }
 
 
-
 function cargarClient(idItem){
     $.ajax({    
-        url : "http://129.151.116.109:1010/api/Client/"+idItem,
+        url : "http://129.151.116.109:7070/api/Client/"+idItem,
         type : 'GET',
         dataType : 'JSON',        
 
@@ -101,7 +100,7 @@ function cargarClient(idItem){
 
 function consultarClient(){
     $.ajax({
-        url:"http://129.151.116.109:1010/api/Client/all",
+        url:"http://129.151.116.109:7070/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -145,7 +144,7 @@ function guardarClient(){
         contentType:"application/json; charset=utf-8",
         dataType: 'JSON',
         data: JSON.stringify(var2),
-        url:"http://129.151.116.109:1010/api/Client/save",
+        url:"http://129.151.116.109:7070/api/Client/save",
         success:function(respose) {
             console.log("Se guardó correctamente");
             //alert("Se guardó correctametne..");
@@ -170,4 +169,5 @@ function limpiarFormularioClient(){
 $(document).ready(function(){
     consultarClient();
 });
+
 

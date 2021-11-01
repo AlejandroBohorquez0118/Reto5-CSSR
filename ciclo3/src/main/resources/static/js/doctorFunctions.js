@@ -18,7 +18,7 @@ function editarDoctor(){
        
         data: dataToSend,
         
-        url: 'http://129.151.116.109:1010/api/Doctor/update',
+        url: 'http://129.151.116.109:7070/api/Doctor/update',
         
         type: 'PUT',
         contentType:'application/json',
@@ -53,7 +53,7 @@ function eliminarDoctor(idElemento){
         data : dataToSend,
         
        
-        url : "http://129.151.116.109:1010/api/Doctor/"+idElemento,
+        url : "http://129.151.116.109:7070/api/Doctor/"+idElemento,
         type: 'DELETE',
         contentType:'application/json',
         success : function(json, textStatus, xhr) {
@@ -72,7 +72,7 @@ function eliminarDoctor(idElemento){
 
 function cargarDoctor(idItem){
     $.ajax({    
-        url : "http://129.151.116.109:1010/api/Doctor/"+idItem,
+        url : "http://129.151.116.109:7070/api/Doctor/"+idItem,
         type : 'GET',
         dataType : 'JSON',        
 
@@ -94,7 +94,7 @@ function cargarDoctor(idItem){
 
 function consultarDoctorI(){
     $.ajax({
-        url:"http://129.151.116.109:1010/api/Doctor/all",
+        url:"http://129.151.116.109:7070/api/Doctor/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -143,7 +143,7 @@ function guardarDoctor(){
         contentType:"application/json; charset=utf-8",
         dataType: 'JSON',
         data: JSON.stringify(var2),
-        url:"http://129.151.116.109:1010/api/Doctor/save",
+        url:"http://129.151.116.109:7070/api/Doctor/save",
         success:function(respose) {
             console.log("Se guardó correctamente");
             //alert("Se guardó correctametne..");
@@ -175,7 +175,7 @@ $(document).ready(function(){
 
 function consultarDoctorIC(){
     $.ajax({
-        url:"http://129.151.116.109:1010/api/Specialty/all",
+        url:"http://129.151.116.109:7070/api/Specialty/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -201,5 +201,6 @@ function consultarDoctorIC(){
         console.log('Especialidad select -> '+first_select);
         window.doctorI=first_select; 
      }
+
 
 

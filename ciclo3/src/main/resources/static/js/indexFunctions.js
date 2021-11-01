@@ -2,7 +2,7 @@
 //Funciones Cargar pagina Specialidad
 
 function cargarPag() {
-    $("#contSpecialty").load("http://129.151.116.109:1010/specialtyInterface.html", function (data) {
+    $("#contSpecialty").load("http://129.151.116.109:7070/specialtyInterface.html", function (data) {
 
         $(this).html(data);
     })
@@ -34,7 +34,7 @@ function mostrarPagSpec(){
 //Funciones Cargar pagina Administradores
 
 function cargarPagAdmin() {
-    $("#contAdmin").load("http://129.151.116.109:1010/adminInterface.html", function (data) {
+    $("#contAdmin").load("http://129.151.116.109:7070/adminInterface.html", function (data) {
     console.log("se esta ejecutando cargarPagAdmin")
         $(this).html(data);
         $("#contAdmin").width= 100;
@@ -67,7 +67,7 @@ function mostrarPagAdmin(){
 //Funciones Cargar pagina Clientes
 
 function cargarPagClient() {
-    $("#contClient").load("http://129.151.116.109:1010/clientInterface.html", function (data) {
+    $("#contClient").load("http://129.151.116.109:7070/clientInterface.html", function (data) {
     console.log("se esta ejecutando cargarPagClient")
         $(this).html(data);
         $("#contAdmin").width= 100;
@@ -100,7 +100,7 @@ function mostrarPagClient(){
 //Funciones Cargar pagina Doctor
 
 function cargarPagDoctor() {
-    $("#contDoctor").load("http://129.151.116.109:1010/DoctorInterface.html", function (data) {
+    $("#contDoctor").load("http://129.151.116.109:7070/DoctorInterface.html", function (data) {
     console.log("se esta ejecutando cargarPagDoctor")
         $(this).html(data);
         $("#contDoctor").width= 100;
@@ -133,7 +133,7 @@ function mostrarPagDoctor(){
 //Funciones Cargar pagina Mensaje
 
 function cargarPagMessage() {
-    $("#contMessage").load("http://129.151.116.109:1010/messageInterface.html", function (data) {
+    $("#contMessage").load("http://129.151.116.109:7070/messageInterface.html", function (data) {
     console.log("se esta ejecutando cargarPagMessage")
         $(this).html(data);
         $("#contMessage").width= 100;
@@ -164,7 +164,7 @@ function mostrarPagMessage(){
 }
 
 function cargarPagReservation() {
-    $("#contReservation").load("http://129.151.116.109:1010/reservationInterface.html", function (data) {
+    $("#contReservation").load("http://129.151.116.109:7070/reservationInterface.html", function (data) {
     console.log("se esta ejecutando cargarPagMessage")
         $(this).html(data);
         $("#contReservation").width= 100;
@@ -193,5 +193,6 @@ function mostrarPagReservation(){
     }
     
 }
+
 
 
