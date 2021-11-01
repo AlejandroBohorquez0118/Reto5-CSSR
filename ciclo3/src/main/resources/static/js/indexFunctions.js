@@ -100,7 +100,7 @@ function mostrarPagClient(){
 //Funciones Cargar pagina Doctor
 
 function cargarPagDoctor() {
-    $("#contDoctor").load("http://129.151.116.109:7070/DoctorInterface.html", function (data) {
+    $("#contDoctor").load("http://129.151.116.109:7070/doctorInterface.html", function (data) {
     console.log("se esta ejecutando cargarPagDoctor")
         $(this).html(data);
         $("#contDoctor").width= 100;
