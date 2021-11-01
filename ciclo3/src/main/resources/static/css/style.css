@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(190, 240, 200);
+    color: black;
+    background-image: url(https://fondosmil.com/fondo/6760.jpg);
+}
+
+.card {
+   
+    background-color: rgb(234, 248, 253);
+    border-color: rgb(125, 125, 255);
+ }
+
+.card-body{
+
+    background-color: rgb(205, 240, 255)
+}
+
+
+#cardSpecialty,#cardAdmin,#cardClient,#cardDoctor,#cardReservation,#cardMessage{
+
+    background-color: rgb(205, 240, 255);
+    font-family:cursive;
+    font-size: 12pt;
+    
+}
+
+h1{
+
+    color: rgb(69, 69, 199);
+    font: bolder;
+}
+
+.card-tittle{
+
+    font-size: 16pt;
+
+
+}
+
+h6{
+
+    font-size: 13pt;
+
+}
+
+.miniLogo{
+
+height: 35pt;
+width: 35pt;
+
+}
+
+#logoBienvenida{
+
+    height: 200pt;
+    width: 200pt; 
+
+}
+
+#CardBienvenida{
+
+
+font-family: cursive;
+color: black;
+
+}
+
+#identificacion{
+
+font-family: cursive;
+color: black;
+
+}
+
+#Service{
+
+color: black;
+
+}

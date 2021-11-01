@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reservaciones</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/reservationFunctions.js"></script>
+        
+    </head>
+        
+    <body ><center>
+
+        <h2 class="text-md-center m-4">Registro de Reservaciones</h2>
+        <div id="formato" class="container text-center" style="width: 80%;">
+            
+            <p class="text-md-center m-3">Fecha de Inicio</p>
+            <input class="form-control m-3" type="date" id="dateStart" placeholder="Nombre">
+            <p class="text-md-center m-3">Fecha de Devolucion</p>
+            <input class="form-control m-3" type="date" id="dateDevolution" placeholder="Departamento">
+            <div id="comboDoctorR" onclick="fillBookDoctorR(document)"></div>
+            <div id="comboClienteR" onclick="fillBookClienteR(document)"></div>
+            <br>
+            <button type="button" class="btn btn-info" onclick="guardarReservation()">GUARDAR</button>
+            <button type="button" class="btn btn-info" onclick="editarReservation()">EDITAR</button>
+        </div>  
+          
+
+
+        <h2 class="text-md-center m-4">Consultas </h2>
+        <hr>
+        <div id="resultadosReservation" style="width: 120%;"></div>
+        <br>
+        <br>
+        <h2 class="text-md-center m-4">Registro de Calificaciones</h2>
+        <div id="formato" class="container text-center" style="width: 80%;">
+            <input class="form-control m-3" type="number" id="scoreReservation" readonly="readonly" placeholder="Calificacion">
+            <input class="form-control m-3" type="text" id="messageReservation" readonly="readonly" placeholder="Mensaje">
+            <button type="button" class="btn btn-info" onclick="calificacion()">GUARDAR</button>
+            <button type="button" class="btn btn-info" onclick="editarScore()">EDITAR</button>
+        
+    </center></body>
+</html>

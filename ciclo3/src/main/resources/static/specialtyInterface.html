@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Especialidad</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/specialtyFunctions.js"></script>
+    </head>
+        
+    <body><center>
+        
+
+        <h2 class="text-md-center m-4">Registro de Especialidades</h2>
+        <div id="formato" class="container text-center" style="width: 80%;">
+            <input class="form-control m-3" type="text" id="name" placeholder="Nombre">
+            <input class="form-control m-3" type="text" id="description" placeholder="Descripcion">
+            <button type="button" class="btn btn-info" onclick="guardar()">GUARDAR</button>
+            <button type="button" class="btn btn-info" onclick="editar()">EDITAR</button>
+        </div>
+        
+        
+        
+        <h2 class="text-md-center m-4">Consultas </h2>
+       
+        <div id="resultados" class="container" style="width: 120%;"></div>
+        
+    </center></body>
+</html>
